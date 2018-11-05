@@ -111,7 +111,16 @@ Checkout some of the auto-included files in `src/css/utils/` (`variables.styl`, 
 
 Fonts are from Google Fonts
 
-* Font styles not chosen yet
+* Raleway
+* Playfair Display
+
+```
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+```
+```
+font-family: 'Raleway', sans-serif;
+font-family: 'Playfair Display', serif;
+```
 
 ## Assets
 
