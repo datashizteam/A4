@@ -27,18 +27,14 @@ Change `base/header` in `index.hbs`:
 
 Fill out `template-data/meta.json`
 
-##### Analytics
-
-For New American Economy analytics use `UA-18821235-10`.
-
 #### Copy
 
 Using a Google Doc for copy is recommended. We use [ArchieML](http://archieml.org) as a micro CMS.
 
 **Setup Google doc**
 
-- Copy the template Google Doc in the PNAE Google Drive in Research -> Projects -> Data Viz Blog
-- Click `Share` button -> advanced -> Change... -> to "Anyone with this link" (Not just within the NAE network)
+- Create new Google Doc
+- Click `Share` button -> advanced -> Change... -> to "Anyone with this link"
 - In the address bar, grab the ID - eg. ...com/document/d/**1IiA5a5iCjbjOYvZVgPcjGzMy5PyfCzpPF-LnQdCdFI0**/edit
 - In the file `config.json` in root of project, paste in the ID
 
@@ -101,7 +97,7 @@ In the folder `src/js/utils` there a are a bunch of handy helper JS functions.
 - [scrollama](https://github.com/russellgoldenberg/scrollama)
 - [ScrollWatch](https://edull24.github.io/ScrollWatch/)
 
-NoUISlider is included by default, with some preset NAE styles. To include it, simply include the library in your JS file `import noUiSlider from 'nouislider'`. Then in `src/css/config.styl`, uncomment `no-ui-slider.styl`.
+NoUISlider is included by default, with some preset styles. To include it, simply include the library in your JS file `import noUiSlider from 'nouislider'`. Then in `src/css/config.styl`, uncomment `no-ui-slider.styl`.
 
 ## CSS
 
@@ -113,25 +109,9 @@ Checkout some of the auto-included files in `src/css/utils/` (`variables.styl`, 
 
 ## Fonts
 
-Fonts are loaded async and use the [FOUT](https://www.zachleat.com/web/comprehensive-webfonts/#fout-class) practice. We have two font families:
+Fonts are from Google Fonts
 
-- **Lyon** (class name: `nae-lyon`)
-- **Founders Grotesk** (class name: `nae-grotesk`)
-
-Simply include the class on the element, and all children will inherit it.
-
-Example:
-
-```html
-<div class='example'>
-	<p class='nae-grotesk'>test</p>
-</div>
-```
-
-Use the **font-weight** CSS property. Available weights:
-
-- Lyon: 400, 700, 400 Italic
-- Founders: 400, 500, 600
+* Font styles not chosen yet
 
 ## Assets
 
@@ -165,9 +145,5 @@ Run `make nae` to deploy and bust cache.
 - optimize images: make sure they aren't unncessarily large in dimensions (should be no more than 2x their final rendered dimensions), should also be crunched with something like [imageoptim](https://imageoptim.com/online).
 - clean data: reduce filesize bloat by making sure you aren't loading unnecessary columns and rows.
 - remove console logs: aesthetics :smile:
-- enable anayltics: put `UA-18821235-10` in `template-data/meta.json`
 - fill out metadata: `template-data/meta.json`
 - record project recap
-- create two social images:
-  * Facebook: 1200 x 628 (`src/assets/social/social-facebook.jpg`)
-  * Twitter: 1024 x 576 (`src/assets/social/social-twitter.jpg`)
