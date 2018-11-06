@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 
-<!--[if lt IE 7]><html class="no-js ie ie6 lt-ie9 lt-ie8 lt-ie7" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
-<!--[if IE 7]><html class="no-js ie ie7 lt-ie9 lt-ie8" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
-<!--[if IE 8]><html class="no-js ie ie8 lt-ie9" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
-<!--[if gt IE 8]><-->
-
 <html>
 
 <head>
@@ -24,17 +19,16 @@
 </head>
 
 <body>
-	<div>
 
-		{{> base/header}}
-
-		<div class="article-content">
-
-			{{> story/intro}}
-
-		</div>
-
+	{{> base/header}}
+	
+	<div class="container-fluid">
+		{{> story/intro}}
 	</div>
+	
+
+
+
 	<script src='bundle.js?version={{timestamp}}' async></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

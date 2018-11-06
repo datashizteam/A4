@@ -1,11 +1,18 @@
-<header class="article__lede">
-	<h1 class="h1__sans article__title-h">{{copy.title}}</h1>
-	<p class="h2__sans article__sub-h"></p>
-	<p class="article__date"><strong class="date--title">Date: </strong>{{copy.date}}</p>
-</header>
-
-<div class="article__body ">
-	{{copy.description}}
+<div class="row title">
+	<div class="col-md-12">
+		<h1>{{copy.title}}</h1>
+		<p><strong>Date: </strong>{{copy.date}}</p>
+	</div>
 </div>
 
-<p>{{copy.p1}}</p>
+<div class="row">
+	<div class="col-md-6 intro_black">
+		<h1>{{copy.description1}}</h1>
+	</div>
+	<div class="col-md-6 intro_white">
+		<h1>{{copy.description2}}</h1>
+	</div>
+</div>
+<div class="row">
+	<h2>{{copy.intro}}</h2>
+</div>

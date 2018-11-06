@@ -1,16 +1,14 @@
 {
   "title": "Enter Article Title Here",
   "description": "Enter a short description about the article here",
-  "url": "https://www.newamericaneconomy.org",
+  "url": "",
   "keywords": "",
-  "imgFacebook": "https://www.newamericaneconomy.org/wp-content/themes/nae-wp-theme/static/img/nae-logo-og.png",
-  "imgTwitter": "https://www.newamericaneconomy.org/wp-content/themes/nae-wp-theme/static/img/nae-logo-og.png",
-  "msapplication-TileImage": "https://www.newamericaneconomy.org/wp-content/themes/nae-wp-theme/static/img/favicons/mstile.png",
+  "msapplication-TileImage": "",
   "msapplication-TileColor": "#FFFFFF",
   "author": {
     "name": "Author Name",
-    "url": "https://twitter.com/newamericanecon",
-    "twitterHandle": "@newamericanecon"
+    "url": "",
+    "twitterHandle": ""
   },
   "analytics": ""
 }

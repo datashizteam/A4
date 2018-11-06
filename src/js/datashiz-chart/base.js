@@ -1,16 +1,16 @@
 /*
  USAGE (example: line chart)
  1. c+p this template to a new file (line.js)
- 2. change naeChartName to naeChartLine
- 3. in graphic file: import './nae-chart/line'
- 4a. const charts = d3.selectAll('.thing').data(data).naeChartLine();
- 4b. const chart = d3.select('.thing').datum(datum).naeChartLine();
+ 2. change datashizChartName to datashizChartLine
+ 3. in graphic file: import './datashiz-chart/line'
+ 4a. const charts = d3.selectAll('.thing').data(data).datashizChartLine();
+ 4b. const chart = d3.select('.thing').datum(datum).datashizChartLine();
 */
 
-d3.selection.prototype.naeChartName = function init(options) {
+d3.selection.prototype.datashizChartName = function init(options) {
 	function createChart(el) {
-		const $sel = d3.select(el);
-		let data = $sel.datum();
+		const sel = d3.select(el);
+		let data = sel.datum();
 		// dimension stuff
 		let width = 0;
 		let height = 0;
@@ -24,26 +24,26 @@ d3.selection.prototype.naeChartName = function init(options) {
 		const scaleY = null;
 
 		// dom elements
-		let $svg = null;
-		let $axis = null;
-		let $vis = null;
+		let svg = null;
+		let axis = null;
+		let vis = null;
 
 		// helper functions
 
 		const Chart = {
 			// called once at start
 			init() {
-				$svg = $sel.append('svg.nae-chart');
-				const $g = $svg.append('g');
+				svg = sel.append('svg.datashiz-chart');
+				const g = svg.append('g');
 
 				// offset chart for margins
-				$g.at('transform', `translate(${marginLeft}, ${marginTop})`);
+				g.at('transform', `translate({marginLeft}, {marginTop})`);
 
 				// create axis
-				$axis = $svg.append('g.g-axis');
+				axis = svg.append('g.g-axis');
 
 				// setup viz group
-				$vis = $g.append('g.g-vis');
+				vis = g.append('g.g-vis');
 
 				Chart.resize();
 				Chart.render();
@@ -51,9 +51,9 @@ d3.selection.prototype.naeChartName = function init(options) {
 			// on resize, update new dimensions
 			resize() {
 				// defaults to grabbing dimensions from container element
-				width = $sel.node().offsetWidth - marginLeft - marginRight;
-				height = $sel.node().offsetHeight - marginTop - marginBottom;
-				$svg.at({
+				width = sel.node().offsetWidth - marginLeft - marginRight;
+				height = sel.node().offsetHeight - marginTop - marginBottom;
+				svg.at({
 					width: width + marginLeft + marginRight,
 					height: height + marginTop + marginBottom
 				});
@@ -67,7 +67,7 @@ d3.selection.prototype.naeChartName = function init(options) {
 			data(val) {
 				if (!arguments.length) return data;
 				data = val;
-				$sel.datum(data);
+				sel.datum(data);
 				Chart.render();
 				return Chart;
 			}
