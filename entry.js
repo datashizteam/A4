@@ -37,14 +37,8 @@ function handleResize() {
 }
 
 // scrollama event handlers
-function handleStepEnter(response) {
+function handleStepEnter(response, d) {
 
-	step.classed('is-active', function (d, i) {
-		return i === response.index;
-	})
-
-	// update graphic based on step
-	chart.select('p').text(response.index + 1)
 	// var someData = d3.csv("<LINK TO DATA HERE>");
 	// var otherData = d3.json("<LINK TO DATA HERE>");
 
@@ -101,7 +95,7 @@ function init() {
 		// text: '.scroll__text',
 		step: '.scroll__text .step',
 		offset: 0.75,
-		debug: false
+		debug: true
 	})
 		.onStepEnter(handleStepEnter)
 		.onContainerEnter(handleContainerEnter)
