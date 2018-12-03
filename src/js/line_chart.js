@@ -1,11 +1,10 @@
 var width = 1200,
     height = 600
 
-var margin = ({top: 45, right: 45, bottom: 45, left: 45});
-
 var svg2 = d3.select(".scroll__figure2").append("svg")
     .style("width", "100%")
-    .style("height", "100%");
+    .style("height", "100%")
+    .style("z-index", "-1");
 
 var g2 = svg2.append("g");
 
@@ -14,6 +13,7 @@ async function doThings() {
                      data.x = "Year";
                      data.x1 = "Alternative_Year";
                      data.y = "Count";
+    var margin = ({top: 45, right: 45, bottom: 45, left: 45});
     
 	var x = d3.scaleTime()
 	.domain(d3.extent(data, d => d.x))
