@@ -54,7 +54,7 @@ function handleResize() {
 }
 
 // scrollama event handlers
-function handleStepEnter(response) {
+function handleStepEnter(response, data) {
 
 	step.classed('is-active', function (d, i) {
 		return i === response.index;
@@ -73,9 +73,22 @@ function handleStepEnter(response) {
 	// }
 
 	// // update graphic1 based on step 1
-	// if (step._groups[0][0].className === 'step is-active') {
-		
-	// }
+	if (step._groups[0][0].className === 'step is-active') {
+		time_period = "1";
+		d3.select('#timeslide')._groups[0][0].value = "0";
+
+		var val = data.properties.five;
+
+		if (val != 0) {
+			var node = svg.append("path")
+			.datum({type:"Feature", geometry:{type: "Point", coordinates:[data.properties.long,data.properties.lat]}})
+			.attr("d", d3.geoPath(projection).pointRadius(4))
+			.attr("fill", colorRange(val))
+			.style('stroke', 'black').style('stroke-width', 0.5)
+			.attr("opacity", 0.75)
+		}
+
+	}
 
 	// // update graphic1 based on step 2
 	// if (step._groups[0][1].className === 'step is-active') {
