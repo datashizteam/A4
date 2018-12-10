@@ -1,119 +1,107 @@
 input[type=range] {
   -webkit-appearance: none;
-  width: 40%;
-  margin: 7px 0;
+  width: 100%;
+  margin: 6.15px 0;
 }
-
 input[type=range]:focus {
   outline: none;
 }
-
 input[type=range]::-webkit-slider-runnable-track {
-  width: 40%;
-  height: 5px;
+  width: 100%;
+  height: 4.7px;
   cursor: pointer;
-  -webkit-box-shadow: 0px 0px 0.1px #000, 0px 0px 0px #0d0d0d;
-  box-shadow: 0px 0px 0.1px #000, 0px 0px 0px #0d0d0d;
-  background: rgba(179,255,102,0.78);
-  border-radius: 25px;
-  border: 0px solid #010101;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #e1e1e1;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
 }
-
 input[type=range]::-webkit-slider-thumb {
-  -webkit-box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;
-  box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;
-  border: 2.5px solid #b3ff66;
-  height: 19px;
-  width: 19px;
-  border-radius: 15px;
-  background: #fff;
+  box-shadow: 0px 0px 0px #b7b7b7, 0px 0px 0px #c4c4c4;
+  border: 0.4px solid #8f8f8f;
+  height: 17px;
+  width: 8px;
+  border-radius: 16px;
+  background: #f2f2f2;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -7px;
+  margin-top: -6.35px;
 }
-
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: rgba(192,255,128,0.78);
+  background: #eeeeee;
 }
-
 input[type=range]::-moz-range-track {
-  width: 40%;
-  height: 5px;
+  width: 100%;
+  height: 4.7px;
   cursor: pointer;
-  box-shadow: 0px 0px 0.1px #000, 0px 0px 0px #0d0d0d;
-  background: rgba(179,255,102,0.78);
-  border-radius: 25px;
-  border: 0px solid #010101;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #e1e1e1;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
 }
-
 input[type=range]::-moz-range-thumb {
-  box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;
-  border: 2.5px solid #b3ff66;
-  height: 19px;
-  width: 19px;
-  border-radius: 15px;
-  background: #fff;
+  box-shadow: 0px 0px 0px #b7b7b7, 0px 0px 0px #c4c4c4;
+  border: 0.4px solid #8f8f8f;
+  height: 17px;
+  width: 8px;
+  border-radius: 16px;
+  background: #f2f2f2;
   cursor: pointer;
 }
-
 input[type=range]::-ms-track {
-  width: 40%;
-  height: 5px;
+  width: 100%;
+  height: 4.7px;
   cursor: pointer;
   background: transparent;
   border-color: transparent;
   color: transparent;
 }
-
 input[type=range]::-ms-fill-lower {
-  background: rgba(166,255,76,0.78);
-  border: 0px solid #010101;
-  border-radius: 50px;
-  box-shadow: 0px 0px 0.1px #000, 0px 0px 0px #0d0d0d;
+  background: #d4d4d4;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
 }
-
 input[type=range]::-ms-fill-upper {
-  background: rgba(179,255,102,0.78);
-  border: 0px solid #010101;
-  border-radius: 50px;
-  box-shadow: 0px 0px 0.1px #000, 0px 0px 0px #0d0d0d;
+  background: #e1e1e1;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
 }
-
 input[type=range]::-ms-thumb {
-  box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;
-  border: 2.5px solid #b3ff66;
-  height: 19px;
-  width: 19px;
-  border-radius: 15px;
-  background: #fff;
+  box-shadow: 0px 0px 0px #b7b7b7, 0px 0px 0px #c4c4c4;
+  border: 0.4px solid #8f8f8f;
+  height: 17px;
+  width: 8px;
+  border-radius: 16px;
+  background: #f2f2f2;
   cursor: pointer;
-  height: 5px;
+  height: 4.7px;
 }
-
 input[type=range]:focus::-ms-fill-lower {
-  background: rgba(179,255,102,0.78);
+  background: #e1e1e1;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #eeeeee;
 }
 
-input[type=range]:focus::-ms-fill-upper {
-  background: rgba(192,255,128,0.78);
-}
 
 .range-labels {
   padding: 0;
   list-style: none;
   text-align: center;
   position: absolute;
-  width: 79.5rem;
-  left: 20rem;
-  top: 3.9rem;
+  width: 50.5rem;
+  left: 36.8rem;
+  top: 0rem;
 }
 
 .range-labels li {
   position: relative;
-  width: 11%;
+  width: 13.85%;
   text-align: center;
   color: #b2b2b2;
-  font-size: 14px;
+  font-size: 16px;
+  color: #fff;
   cursor: pointer;
   list-style: none;
   display: inline-block;
@@ -122,7 +110,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .range-labels li::before {
   position: absolute;
-  top: -35px;
+  top: -25px;
   right: 0;
   left: 0;
   content: "";
@@ -137,9 +125,9 @@ input[type=range]:focus::-ms-fill-upper {
 .range {
   text-align: center;
   position: absolute;
-  top: 2.5rem;
-  width: 70rem;
-  left: 24.5rem;
+  top: -2rem;
+  width: 15rem;
+  left: 54.5rem;
 }
 
 .range span {
@@ -164,7 +152,7 @@ input[type=range]:focus::-ms-fill-upper {
   font-family: "Lora", serif;
   font-size: 1.2em;
   line-height: 1.55;
-  padding-bottom: 10rem;
+  padding-bottom: 14rem;
   padding-top: 1em
   text-align: left;
   display: block;
@@ -201,7 +189,8 @@ input[type=range]:focus::-ms-fill-upper {
   position: -webkit-sticky;
   position: sticky;
   right: 50%;
-  top: 4em;
+  top: 7em;
+  padding-left: 5em
   bottom: auto;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
