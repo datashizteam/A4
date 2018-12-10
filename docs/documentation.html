@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Documentation</title>
+	
+	<link rel="stylesheet" href="bundle.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Oswald:600|Press+Start+2P" rel="stylesheet">
+</head>
+<body>
+	<nav class="row datashiz_title">
+	  <div class="col-md-3">
+	  	<a href="index.html">
+	  		<h4><span style='color: #fff'>Data</span>{<span style='color: #42d9f4'>Shiz</span>}</h4>
+	  	</a>
+	  </div>
+	  <div class="col-md-6"></div>
+	  <div class="col-md-3">
+	  	<a href="documentation.html">DOCUMENTATION</a>
+	  </div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 motivation">
+				<h1>Motivation</h1>
+				<p>
+					We were initially motivated to create an interactive-narrative about the desegregation of American schools given that this sensitive topic is part of our nation’s history. However, after further investigation, we encountered multiple instances of segregation complaints in recent news articles. From this discovery, we asked ourselves if the general public was aware of the re-emergence of segregation in their local or neighboring school districts, and if so, what actions should they take or policies should they support to prevent this reappearance. Thus we decided to explore both desegregation and re-segregation post-Brown vs Board.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 motivation">
+				<h1>Related Work</h1>
+				<p>
+					The three main works that relate to our project were covered by ProPublica; names are listed below under “References: Projects/Articles”. The new publisher company created a <a href="http://www.projects.propublica.org/graphics/desegregation-orders/">national survey</a> of school desegregation, an <a href="http://www.projects.propublica.org/miseducation/">in-depth breakdown</a> of racial diversity in school districts across several states, and extensive news article on <a href="http://www.propublica.org/article/segregation-now-full-text/">contemporary school segregation</a>. The first work was used to gain a general visual understanding of which states have the most court orders by data, while the second work helped us contextualize our own personal bias of our own school and neighboring school districts. Finally, the news article was used as an introduction to the topic. 
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 motivation">
+				<h1>Methodology</h1>
+				<p>
+					Our ProPublica dataset was divided into two parts (involuntary and voluntary data) that were explored using Tableau. 
+				</p>
+				<p>
+					Note - From README.html file: 
+					The involuntary data “includes information about school desegregation orders mandated by federal courts” 
+					The voluntary data “includes information about open school desegregation orders that resulted from voluntary agreements between school districts and the U.S. Department of Education’s Office of Civil Rights.” 
+				</p>
+				<p>
+					Our exploratory analysis revealed a dense concentration of active desegregation court orders in the Southern region of the United States. There were few court orders placed during the late 1950s; Brown vs. Board case concluded in 1954. However, this soon changed drastically during the 1960s as the number of court orders jumped by more than 1700% which most likely coincided with the height of the Civil Rights Movement. In addition to that, we found a significant increase in the number of complaints/investigations from 2006 to 2012; an average increase of 62% per year. Our amazement caused us to reflect on and research how national events like court rulings, national education-related policy, and historic events may have influenced this spike. 
+				</p>
+				<p>
+					While this information would’ve been sufficed to present, we felt that it would’ve been best to add another layer to this discussion of school (de/re)segregation. Using American Community Survey data from the U.S. Census, we analyzed demographic, school enrollment, and per-student spending in desegregated and segregated schools. Our analysis showed no correlation between the percent of black students in a school district versus the total spending per student and a smaller average spending per student in desegregated schools than segregated schools. In the end, our NULL result showed us that funding is no more equitable in a desegregated school than a segregated school, this meant we needed to explore the topic outside of the data relm. We thought to also explore whether desegregation improved academic performance, however, after reading research by Sean F. Reardon, Elena Grewal, Demetra Kalogrides, Erica Greenberg from Stanford University, it appeared inconclusive that desegregation had an effect on the academic success of students.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 motivation">
+				<h1>Design</h1>
+				<p>
+					We initially considered delivering an Observable notebook rather than an interactive website, however, we soon digressed from the original idea after re-evaluating the visual-narrative goal of our project. We hoped to present a website whose color background would mimic the progression of (de/re)segregation. Meaning, the background of the first segment would transition from black to white to convey the sense of desegregation, in which non-white students were slowly integrating themselves into white-only spaces. In the second segment, we observe a transition from white to black which communicates the essence of re-segregation, in which racial progress is slowly regressing to its initial state.
+				</p>
+				<p>
+					The final design choice was the use of interactive/static visualizations to supplement the research we’ve conducted. We intended to focus more on the research aspect of this project, so we coded a couple of visualizations that wouldn’t distract the reader from their reading but complement the statements that we were unfolding. This meant positioning the map visualization to the right of the website, as people typically read from left to right, and placing the time series graph on the background so that focus would be on the words that appear as the user scrolls, allowing the reader to focus on the inflection of historical moments from 2006 to 2014. 
+				</p>
+				<p>
+					The one idea we unfortunately abandoned was a <a href="https://beta.observablehq.com/@krwarner/force-directed-school-district-map">force-directed break-up</a> of segregated school districts. The main reason was because we didn’t know where in the narrative this visualization would’ve been placed best and not interrupt the user's understanding through the scrolly-telling narratives. Our final consideration was to have this be at the end, comparing two states with a similar percentage of non-white students, Colorado, a state with the highest percentage of individuals with at least a bachelor's degree, and South Carolina, a state in the lower quartile of education. Based on the segregation of school districts, the districts would have been pushed apart with greater or lesser force. However, due to time constraints and narrative fit, we felt this interactive visualization would best fit a follow up post.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 motivation">
+				<h1>Implementation</h1>
+				<p>
+					Our interactive website is hosted on Github through our /doc folder from our main repository and was built using the “Starter Template” from The Pudding’s GitHub Repository as a base, with various tweaks made for performance on this particular project, to which we added the D3 V5 library with TopoJSON and <a href="https://pudding.cool/process/introducing-scrollama/">Scrollama</a> Library. All our curated CSV file data is stored in Gists on GitHub and called using promises. We had no issues with data loading and performance. During development we used ArchieML with a connected Google doc as a CMS, Gulp for managing our local server and various optimizations, Stylus as our CSS preprocessor, Webpack for bundling our javascript, and handlebars for HTML templating. 
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 motivation">
+				<h1>Discussion</h1>
+				<p>
+					Overall, we believe our visual encoding and interaction design were fine, although we and our audience agree that there could’ve been more interactivity in our visualizations. To combine with our narrative, we wanted our map to change years and the time graph to highlight the year-at-focus. We did this in two ways, both through updating the visuals based on the scrollytelling step and with a slider. In addition, there was room for an earlier elaboration of our graphs. Meaning, several audience members questioned what to make of the information they were receiving (ex. Court orders) until they scrolled a bit further and encountered more information. It would’ve been best to highlight this notion beforehand. Finally, we could’ve added an option in the time series graph to look at the number of court orders by state. However, we questioned this opinion as it would’ve meant a drastic change in the overall layout of the background. If the user would’ve chosen a state with little to no court orders, there would’ve been a giant area of empty space in the webpage. Despite that, we still agree that the time series graph could’ve had an extra layer of user-interactivity. Perhaps it would be worth looking at a purely interactive visualization / data exploration tool as a follow up to allow users to further their knowledge. 
+				</p>
+				<p>
+					To conclude, our narrative/color designs were on-point and recognized by our audience (of scholars) for portraying the gradual shifts in school (de/re)segregation, and the narrative we wrote was nostalgic as several audience members recalled previous articles that drew parallels to what we wrote and insightful as the article had them question and wonder what will come of this re-emergence and what actions the general public should take to prevent this.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 motivation">
+				<h1>Future Work</h1>
+				<p>
+					Provided more time (or an additional team member), we would’ve added more interactivity to our (Background) Time Series graph so that the user could see a breakdown of court order/investigations by state, and several static visualizations to complement our qualitative research, in particular in the section near the end discussing the best steps for school districts to take to improve their students’ success. 
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 motivation">
+				<h1>Acknowledgements</h1>
+				<p>
+					First and foremost, we would like to thank Professor Agnes Chang and the TAs (Conder and Jeevan) for teaching us the key principles of Data Visualization and for guiding us throughout this project via constructive criticisms. We would also like to thank ProPublica for not only providing us with the <a href="https://www.propublica.org/datastore/dataset/school-desegregation-orders-data">dataset</a> but also introducing us to the topic of contemporary school segregation. Finally, we give thanks to Mike Bostock for <a href="https://d3js.org/">D3 Visualization</a> and The Pudding for their <a href="https://github.com/the-pudding/starter">Starter Template</a>. 
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 motivation">
+				<h1>References</h1>
+				<p>
+					Datasets
+				</p>
+				<ol>
+					<li>U.S. Department of Justice, U.S. Department of Education, and Stanford University. School Desegregation Orders Data, July 2014. ProPublica. December 2014.</li>
+					<li>U.S. Census Bureau; American Community Survey, 2012-2016 American Community Survey 5-Year Public Use Microdata Samples; using American FactFinder; http://factfinder2.census.gov; (12 January 2018).</li>
+				</ol>
+				<p></p>
+				<p>Research</p>
+				<ol>
+					<li>Chetty, Raj, and Nathaniel Hendren. "The impacts of neighborhoods on intergenerational mobility I: Childhood exposure effects." The Quarterly Journal of Economics 133.3 (2018): 1107-1162</li>
+					<li>Chetty, Raj, and Nathaniel Hendren. "The impacts of neighborhoods on intergenerational mobility II: County-level estimates." The Quarterly Journal of Economics 133.3 (2018): 1163-1228.</li>
+					<li>Reardon, Sean F., et al. "Brown Fades: The End of Court‐Ordered School Desegregation and the Resegregation of American Public Schools." Journal of Policy Analysis and Management 31.4 (2012): 876-904.</li>
+					<li>“BROWN V. BOARD: Timeline of School Integration in the U.S.” Teaching Tolerance, <a href="www.tolerance.org/magazine/spring-2004/brown-v-board-timeline-of-school-integration-in-the-us">www.tolerance.org/magazine/spring-2004/brown-v-board-timeline-of-school-integration-in-the-us.</a> </li>
+				</ol>
+				<p></p>
+				<p>Projects / Articles</p>
+				<ol>
+					<li>Groeger, Lena V, et al. “Is There Racial Inequality at Your School?” Miseducation, ProPublica, 16 Oct. 2018, <a href="www.projects.propublica.org/miseducation/">www.projects.propublica.org/miseducation/</a>.</li>
+					<li>Qui, Yue, et al. “A National Survey of School Desegregation Orders”, ProPublica, 23 Dec. 2014, <a href="www.projects.propublica.org/graphics/desegregation-orders/">www.projects.propublica.org/graphics/desegregation-orders/</a>.</li>
+					<li>Hannah-Jones, Nikole. “Segregation Now” ProPublica, 16, Apr. 2018, <a href="www.propublica.org/article/segregation-now-full-text/">www.propublica.org/article/segregation-now-full-text/</a>.</li>
+					<li>“Failure Factories Series” Tampa Bay Times, 12, Aug. 2015, <a href="www.tampabay.com/projects/2015/investigations/pinellas-failure-factories/">www.tampabay.com/projects/2015/investigations/pinellas-failure-factories/</a>.</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
