@@ -175,7 +175,7 @@ var x = d3.scaleTime()
     .text("Facebook + Twitter");
 
   svg2.append("a")
-    .attr("xlink:href", "#2004")
+    .attr("xlink:href", "#2006")
     .append("rect")  
     .attr("x", x_linear(new Date("2004-06-02"))-50)
     .attr("y", height/2 - 80)
